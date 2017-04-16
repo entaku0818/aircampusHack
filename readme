@@ -1,0 +1,7 @@
+
+ruby --version
+ruby 2.2.0p0
+
+
+# 実行方法
+ruby app.rb

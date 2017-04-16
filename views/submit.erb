@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+  あなたのGPAは<%= @gpa %>です！
+  <table>
+    <tr>
+      <th>科目名</th>
+      <th>評価</th>
+      <th>GPA</th>
+    </tr>
+    <% @scores.each do |score| %>
+      <tr>
+        <td><%= score["course"] %></td>
+        <td><%= score["score"] %></td>
+        <td><%= score["score_gpa"] %></td>
+      </tr>
+    <% end %>
+  </table>
+</body>
+</html>
