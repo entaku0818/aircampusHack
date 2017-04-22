@@ -1,6 +1,19 @@
 
+# setup
+```
 ruby --version
 ruby 2.2.0p0
+
+# sinatra をインストール
+gem install sinatra
+
+# nokogiri をインストール
+gem install nokogiri -- --use-system-libraries
+
+```
+
+
+
 
 
 # 実行方法
