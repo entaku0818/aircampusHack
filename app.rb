@@ -23,3 +23,12 @@ post '/submit' do
   @gpa = scores["gpa"]
   erb :submit
 end
+
+post '/task' do
+  userid = params[:userid]
+  password = params[:password]
+  scores = bbtScraping.taskGet(userid, password)
+
+
+  erb :task
+end
